@@ -119,8 +119,20 @@ h2 {
 		--bg: #023;
 		--text: #edc;
 	}
+	body {
+		background-image:
+			linear-gradient(
+				#eeff0000 40%, 
+				#ff6700ee
+			),
+			linear-gradient(
+				#6cddff00 20%, 
+				#6cddff99 80%
+			);
+		text-shadow: 0 .1em .1em rgba(0,0,0,.6);
+	}
 	
 	h1 {
-		text-shadow: none;
+		text-shadow: inherit;
 	}
 }
