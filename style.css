@@ -63,9 +63,9 @@ h1 {
 	font-size: 2em;
 	line-height: 1.25;
 	text-shadow:
-		.05em .05em 0 #fe0,
+		.04em .04em 0 #fe0,
 		.08em .08em 0 #0b6,
-		.12em .12em 0 #f40,
+		.11em .11em 0 #f40,
 		.1em .15em .15em rgba(0,0,0,.2);
 }
 
@@ -108,9 +108,85 @@ h2 {
 	font-weight: 500;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: rgba(0,0,0,.1);
+	border-radius: .25em;
+}
+
 .site > header {
 	margin: auto 0;
 	padding: .01em var(--gutter) 1em;
+}
+
+.site > footer {
+	margin: auto 0 0;
+	padding: 2em var(--gutter);
+}
+
+
+
+.menu a[href*="facebook.com"]::before,
+.menu a[href*="twitter.com"]::before,
+.menu a[href*="instagram.com"]::before,
+.menu a[href*="linkedin.com"]::before {
+	background: no-repeat left center;
+	background-size: contain;
+	content: "";
+	display: inline-block;
+	height: 1.5em;
+	margin: -.5em .3em -.35em 0;
+	width: 1.5em;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-shadow: none;
+}
+
+@media (min-width:30em) {
+
+	.menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.menu li:first-child {
+		margin-left: -.75em;
+	}
+}
+
+.menu li {
+	margin: 0 4% 0 0;
+	padding: 0;
+}
+
+.menu a {
+	display: block;
+	padding: .5em .75em;
+}
+
+.menu a[href*="facebook.com"]::before {
+	background-image: url(img/icon-facebook-b.svg);
+}
+
+.menu a[href*="twitter.com"]::before {
+	background-image: url(img/icon-twitter-b.svg);
+}
+
+.menu a[href*="linkedin.com"]::before {
+	background-image: url(img/icon-linkedin-b.svg);
+}
+
+.menu a[href*="instagram.com"]::before {
+	background-image: url(img/icon-instagram-b.svg);
 }
 
 
@@ -134,5 +210,21 @@ h2 {
 	
 	h1 {
 		text-shadow: inherit;
+	}
+
+	.menu a[href*="facebook.com"]::before {
+		background-image: url(img/icon-facebook-w.svg);
+	}
+	
+	.menu a[href*="twitter.com"]::before {
+		background-image: url(img/icon-twitter-w.svg);
+	}
+	
+	.menu a[href*="linkedin.com"]::before {
+		background-image: url(img/icon-linkedin-w.svg);
+	}
+	
+	.menu a[href*="instagram.com"]::before {
+		background-image: url(img/icon-instagram-w.svg);
 	}
 }
