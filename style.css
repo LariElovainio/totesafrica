@@ -2,11 +2,11 @@
 	--bg: #f5f7f1;
 	--text: #543;
 	--grey-10: #eceee8;
-	
+	--accent-color: #f40;
 	--gutter: 5%;
 	
 	--regular-font: "Multiple Slab", "MultipleSlab", Georgia, serif;
-	--accent-font: "Clarendon URW Wide", "ClarendonURWWid", Georgia, serif;
+	--accent-font: "Signpainter", "Brushberry Script", "Clarendon URW Wide", "ClarendonURWWid", Georgia, serif;
     color-scheme: light dark;
 }
 
@@ -60,25 +60,25 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 	line-height: 1.25;
-	text-shadow:
+	/*text-shadow:
 		.04em .04em 0 #fe0,
 		.08em .08em 0 #0b6,
 		.11em .11em 0 #f40,
-		.1em .15em .15em rgba(0,0,0,.2);
+		.1em .15em .15em rgba(0,0,0,.2);*/
 }
 
 @media (min-width: 43.75em) {
 	h1 {
-		font-size: 2.5em;
+		font-size: 3.75em;
 		line-height: 1.125;
 	}
 }
 
 @media (min-width: 56.25em) {
 	h1 {
-		font-size: 3em;
+		font-size: 4.5em;
 		line-height: 1.05;
 	}
 }
@@ -104,6 +104,7 @@ h2 {
 
 h1,
 h2 {
+	color: var(--accent-color);
 	font-family: var(--accent-font);
 	font-weight: 500;
 }
