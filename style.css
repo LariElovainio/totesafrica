@@ -5,8 +5,8 @@
 	
 	--gutter: 5%;
 	
-	--regular-font: "MultipleSlab", Georgia, serif;
-	--accent-font: "Clarendon URW Wide", Georgia, serif;
+	--regular-font: "Multiple Slab", "MultipleSlab", Georgia, serif;
+	--accent-font: "Clarendon URW Wide", "ClarendonURWWid", Georgia, serif;
     color-scheme: light dark;
 }
 
