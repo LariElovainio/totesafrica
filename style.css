@@ -6,7 +6,7 @@
 	--gutter: 5%;
 	
 	--regular-font: "Multiple Slab", "MultipleSlab", Georgia, serif;
-	--accent-font: "Signpainter", "Brushberry Script", "Clarendon URW Wide", "ClarendonURWWid", Georgia, serif;
+	--accent-font: "Signpainter", Georgia, serif;
     color-scheme: light dark;
 }
 
@@ -17,6 +17,11 @@ body {
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
+}
+
+.site {
+	margin: 0 auto;
+	max-width: 50em;
 }
 
 @media (min-width:25em) {
@@ -127,6 +132,22 @@ a:hover {
 .site > footer {
 	margin: auto 0 0;
 	padding: 2em var(--gutter);
+}
+
+.site > header svg {
+	background: #f40;
+	border-radius: 50%;
+	box-shadow: 0 .1em .5em rgba(0,0,0,.25);
+	display: block;
+	height: auto;
+	margin: 5% auto 2em;
+	max-width: 7em;
+	min-width: 6em;
+	width: 12.5%;
+}
+
+.site > header svg path {
+	fill: var(--bg);
 }
 
 
